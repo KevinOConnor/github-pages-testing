@@ -121,7 +121,7 @@
 
   <!-- Javascript to automatically fix links to files outside docs/ -->
   <script>
-  $('.markdown-body').find('a[href^="../"]').each(function () {
+  $('.markdown-body').find('a[href^="../"]').each(function() {
     this.href = $(this).attr("href").replace(/^\.\./, "https://github.com/KevinOConnor/github-pages-testing/blob/master");
   });
   </script>
