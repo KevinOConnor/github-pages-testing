@@ -8,8 +8,8 @@ printed surface as a subtle 'echo':
 
 def
 
-| x1 | x2 |
-|:--:|:--:|
+| x1   |  x2  |
+| :--: | :--: |
 
 abc
 
