@@ -8,8 +8,9 @@ printed surface as a subtle 'echo':
 
 def
 
-| x1   |  x2  |
-| :--: | :--: |
+| Micro-controller                | Fastest step rate | 3 steppers active |
+| ------------------------------- | ----------------- | ----------------- |
+| 16Mhz AVR                       | 154K              | 102K              |
 
 abc
 
