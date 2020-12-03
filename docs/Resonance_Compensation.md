@@ -15,7 +15,7 @@ def
 abc
 
 | ![Ringing test](img/ringing-test.jpg) | ![3D Benchy](img/ringing-3dbenchy.jpg) |
-|:--:|:--:|
+| -- | -- |
 
 Ringing is caused by mechanical vibrations in the printer due to quick changes
 of the printing direction.
