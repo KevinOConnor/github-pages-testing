@@ -107,12 +107,17 @@
         padding-top: .5em;
         padding-bottom: .5em;
     }
+    .toc-item-h1 { margin-left: 0px; }
+    .toc-item-h2 { margin-left: 10px; }
+    .toc-item-h3, .toc-item-h4, .toc-item-h5, .toc-item-h6 { margin-left: 20px; }
   </style>
   <script>
   $('.markdown-body').find('h1, h2, h3, h4, h5, h6').each(function() {
     var $item = $(this);
     var $id = $(this).attr('id');
     var li = $('<li class="toc-item"/>');
+    var tag = li.prop("tagName");
+    li.addClass("toc-item-" + tag);
     var a = $('<a/>', {text: $item.text(), href: '#' + $id, title: $item.text()});
     a.appendTo(li);
     $('#toc').append(li);
