@@ -120,5 +120,13 @@
   </script>
 
   <!-- Javascript to automatically fix links to files outside docs/ -->
+  <script>
+    $("a[href^='../config/']")
+    .each(function () {
+        console.log("Got ", this.href);
+        this.href = this.href.replace(/^\.\./, "https://example.com/blob/master");
+        console.log("Now ", this.href);
+      });
+  </script>
 </body>
 </html>
