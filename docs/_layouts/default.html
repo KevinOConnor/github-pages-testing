@@ -121,11 +121,9 @@
 
   <!-- Javascript to automatically fix links to files outside docs/ -->
   <script>
-    $("a[href^='../config/']")
-    .each(function () {
-        console.log("Got ", this.href);
+    $("a[href^='../']")
+      .each(function () {
         this.href = $(this).attr("href").replace(/^\.\./, "https://github.com/KevinOConnor/github-pages-testing/blob/master");
-        console.log("Now ", this.href);
       });
   </script>
 </body>
