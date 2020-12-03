@@ -6,41 +6,7 @@ Klipper supports Input Shaping - a technique that can be used to reduce ringing
 printing defect when, typically, elements like edges repeat themselves on a
 printed surface as a subtle 'echo':
 
-def
-
-| Micro-controller                | Fastest step rate | 3 steppers active |
-| ------------------------------- | ----------------- | ----------------- |
-| 16Mhz AVR                       | 154K              | 102K              |
-
-123
-
-| a1 | a2 |
-| -- | -- |
-
-456
-
-| a1 | a2 |
-| ---- | ---- |
-| z1 | z2 |
-
-789
-
-| a1 | a2 |
-| -- | -- |
-| z1 | z2 |
-
-xxx
-
-| ![Ringing test](img/ringing-test.jpg) | ![3D Benchy](img/ringing-3dbenchy.jpg) |
-
-another
-
-![Ringing test](img/ringing-test.jpg) ![3D Benchy](img/ringing-3dbenchy.jpg)
-
-abc
-
-| ![Ringing test](img/ringing-test.jpg) | ![3D Benchy](img/ringing-3dbenchy.jpg) |
-| -- | -- |
+|![Ringing test](img/ringing-test.jpg)|![3D Benchy](img/ringing-3dbenchy.jpg)|
 
 Ringing is caused by mechanical vibrations in the printer due to quick changes
 of the printing direction.
@@ -106,7 +72,6 @@ First, measure the **ringing frequency**.
    or calipers:
 
     |![Mark ringing](img/ringing-mark.jpg)|![Measure ringing](img/ringing-measure.jpg)|
-    |:--:|:--:|
 
 9. Compute the ringing frequency = *V* &middot; *N* / *D* (Hz) where *V* is the
    velocity for outer perimeters (mm/sec). For the example above, we marked 6
