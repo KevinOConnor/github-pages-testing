@@ -6,6 +6,13 @@ Klipper supports Input Shaping - a technique that can be used to reduce ringing
 printing defect when, typically, elements like edges repeat themselves on a
 printed surface as a subtle 'echo':
 
+def
+
+| x1 | x2 |
+|:--:|:--:|
+
+abc
+
 | ![Ringing test](img/ringing-test.jpg) | ![3D Benchy](img/ringing-3dbenchy.jpg) |
 |:--:|:--:|
 
