@@ -21,13 +21,17 @@ def
 
 | a1 | a2 |
 | ---- | ---- |
-| z1 | z2
+| z1 | z2 |
 
 789
 
 | a1 | a2 |
 | -- | -- |
-| z1 | z2
+| z1 | z2 |
+
+xxx
+
+| ![Ringing test](img/ringing-test.jpg) | ![3D Benchy](img/ringing-3dbenchy.jpg) |
 
 abc
 
