@@ -118,10 +118,10 @@
     var $id = $(this).attr('id');
     var li = $('<li class="toc-item"/>');
     var tag = $item.prop("tagName");
-      while (levels.length && tag <= levels[levels.length - 1]) {
-          levels.pop();
-      }
-      levels.push(tag);
+    while (levels.length && tag <= levels[levels.length - 1]) {
+      levels.pop();
+    }
+    levels.push(tag);
     li.addClass("toc-item-H" + levels.length);
     var a = $('<a/>', {text: $item.text(), href: '#' + $id, title: $item.text()});
     a.appendTo(li);

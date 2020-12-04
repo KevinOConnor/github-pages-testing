@@ -117,6 +117,10 @@ for example:
 If such changes are made, it is a good idea to at least measure the ringing
 frequencies to see if they have changed.
 
+### Test it
+
+##### test 2
+
 ## Input shaper configuration
 
 After the ringing frequencies for X and Y axes are measured, you can add the
@@ -252,6 +256,7 @@ Hz), it might be a good idea to increase the printer stiffness or reduce the
 moving mass. Otherwise, acceleration and printing speed may be limited due too
 much smoothing now instead of ringing.
 
+# test 0
 
 ## Fine-tuning resonance frequencies
 
