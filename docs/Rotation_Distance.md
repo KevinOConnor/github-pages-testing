@@ -123,7 +123,8 @@ has a rotation distance of 1.25.
 
 It's possible to obtain an initial rotation distance for extruders by
 measuring the diameter of the "hobbed bolt" that pushes the filament
-and using the following formula: `rotation_distance = <diameter> * 3.14`
+and using the following formula: `rotation_distance =
+<diameter> * 3.14`
 
 If the extruder uses gears then it will also be necessary to
 [determine and set the gear_ratio](#using-a-gear_ratio) for the
@@ -160,8 +161,8 @@ gearbox" is more accurately configured with `gear_ratio: 57:11`.
 
 If several gears are used on an axis then it is possible to provide a
 comma separated list to gear_ratio. For example, a "5:1" gear box
-driving a 16 toothed to 80 toothed pulley could use
-`gear_ratio: 5:1, 80:16`.
+driving a 16 toothed to 80 toothed pulley could use `gear_ratio: 5:1,
+80:16`.
 
 In most cases, gear_ratio should be defined with whole numbers as
 common gears and pulleys have a whole number of teeth on them.
