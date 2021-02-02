@@ -11,7 +11,7 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            if (context.payload.label.name != "Invalid")
+            if (context.payload.label.name != "invalid")
               return;
             msg = "Unfortunately, it appears the directions at:\n"
                 + "  https://www.klipper3d.org/Contact.html\n"
