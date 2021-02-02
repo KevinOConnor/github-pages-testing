@@ -2,7 +2,7 @@
 name: "Close stale issues"
 on:
   schedule:
-  - cron: "16 * * * *"
+    - cron: '25 * * * *'
 jobs:
   stale:
     runs-on: ubuntu-latest
