@@ -6,6 +6,3 @@ contact_links:
   - name: Klipper Discord Chat
     url: https://discord.klipper3d.org/
     about: Klipper community real-time chat server
-  - name: Create a Klipper github issue
-    url: issues/new
-    about: Create a github issue
