@@ -1,9 +1,6 @@
 ---
 name: Create a Klipper github issue
-about: Provide an update on work done to improve Klipper.
+about: Working on improving Klipper? Provide an update on your work here.
 ---
-
-We use github issues to share results of work done to improve Klipper.
-Follow the directions at
-[https://www.klipper3d.org/Contact.html](https://www.klipper3d.org/Contact.html)
-before opening this ticket.
+<!-- Do not open this ticket without first following the directions at:
+    https://www.klipper3d.org/Contact.html -->
