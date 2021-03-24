@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Klipper Community Forum
+  - name: Klipper Forum
     url: https://community.klipper3d.org/
-    about: Forum dedicated to Klipper. Start here.
-  - name: Klipper Discord Chat
+    about: Klipper coummnity Discourse server.
+  - name: Klipper Chat
     url: https://discord.klipper3d.org/
-    about: Klipper community real-time chat server
+    about: Klipper community Discord chat server.
+  - name: Directions
+    url: https://klipper3d.org/Contact.html
+    about: Have a question? Need help? Start here.
