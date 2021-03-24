@@ -1,8 +1,4 @@
 ---
 name: Create a Klipper github issue
 about: Provide an update on work done to improve Klipper.
-title: ''
-labels: ''
-assignees: ''
-
 ---
