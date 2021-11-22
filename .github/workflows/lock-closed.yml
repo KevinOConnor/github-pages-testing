@@ -10,5 +10,5 @@ jobs:
     - uses: dessant/lock-threads@v3
       with:
         process-only: 'issues'
-        issue-lock-inactive-days: '30'
+        issue-inactive-days: '30'
         issue-lock-reason: ''
