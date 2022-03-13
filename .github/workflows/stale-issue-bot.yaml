@@ -8,18 +8,22 @@ jobs:
   mark_reviewer_needed:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v3
         with:
           script: |
             const create_check = new Date("2022-03-01T00:00:00Z").getTime();
             const expireMillis = 1000 * 60 * 60 * 24 * 14;
             const curtime = new Date().getTime();
-            for await (const pr of github.paginate.iterator(
-                       github.rest.pulls.listForRepo,
-                       {
-                         owner: context.repo.owner,
-                         repo: context.repo.repo,
-                       })) {
+            const prs = await github.pulls.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'reviewer needed',
+              assignee: 'none',
+              per_page: 100,
+              page: 1
+            });
+            for (const pr of prs.data.values()) {
               const createtime = new Date(pr.created_at).getTime();
               if (createtime < create_check)
                 continue;
@@ -29,7 +33,7 @@ jobs:
               console.log("dump context");
               console.log(pr);
               continue;
-              await github.rest.issues.addLabels({
+              await github.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: pr.number,
