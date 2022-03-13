@@ -27,10 +27,9 @@ jobs:
               const updatetime = new Date(pr.updated_at).getTime();
               if (curtime < updatetime + expireMillis)
                 continue;
-              if (pr.labels.length > 0)
-                continue;
               console.log("dump context");
               console.log(pr);
+              continue;
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
