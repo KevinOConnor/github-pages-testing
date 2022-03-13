@@ -5,15 +5,12 @@ on:
       types: [labeled]
 jobs:
   add_comment:
-    #if: github.repository == 'Klipper3d/klipper'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v3
         with:
           script: |
             if (context.payload.label.name != "reviewer needed")
-              return;
-            if (context.issue.assignees != [])
               return;
             msg = "Thank you for your contribution to Klipper."
                 + " Unfortunately, a reviewer has not assigned themselves to"
