@@ -12,8 +12,8 @@ jobs:
           script: |
             if (context.payload.label.name != "reviewer needed")
               return;
-            console.log("dump context");
-            console.log(context);
+            if (context.payload.pull_request.assignees.length > 0)
+              return;
             msg = "Thank you for your contribution to Klipper."
                 + " Unfortunately, a reviewer has not assigned themselves to"
                 + " this GitHub Pull Request. All Pull Requests are reviewed"
