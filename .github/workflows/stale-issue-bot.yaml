@@ -14,16 +14,12 @@ jobs:
             const create_check = new Date("2022-03-01T00:00:00Z").getTime();
             const expireMillis = 1000 * 60 * 60 * 24 * 14;
             const curtime = new Date().getTime();
-            const prs = await github.rest.pulls.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: 'reviewer needed',
-              assignee: 'none',
-              per_page: 100,
-              page: 1
-            });
-            for (const pr of prs.data.values()) {
+            const pulls_req = github.paginate.iterator(
+              github.rest.pulls.list, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+              });
+            for await (const pr of pulls_req) {
               const createtime = new Date(pr.created_at).getTime();
               if (createtime < create_check)
                 continue;
