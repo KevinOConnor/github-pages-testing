@@ -13,8 +13,6 @@ jobs:
             if (context.payload.label.name != "reviewer needed")
               return;
             console.log(context.issue);
-            #if (context.issue.assignees.length > 0)
-            #  return;
             msg = "Thank you for your contribution to Klipper."
                 + " Unfortunately, a reviewer has not assigned themselves to"
                 + " this GitHub Pull Request. All Pull Requests are reviewed"
