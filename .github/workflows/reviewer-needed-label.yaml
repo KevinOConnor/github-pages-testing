@@ -12,7 +12,7 @@ jobs:
           script: |
             if (context.payload.label.name != "reviewer needed")
               return;
-            if (context.issue.assignees)
+            if (context.issue.assignees.length > 0)
               return;
             msg = "Thank you for your contribution to Klipper."
                 + " Unfortunately, a reviewer has not assigned themselves to"
